@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div>
         <section className="tooltip">
-          <div className="hover">
+          <div className="Hover">
             <a
               data-for="main"
               data-tip="Hello Tooltip"
@@ -39,25 +39,26 @@ class App extends React.Component {
                   className={place === "top" ? "active" : ""}
                   onClick={this.changePlace.bind(this, "top")}
                 >
-                  Top
+                  &#8593; Top
+                </a>
+                
+                <a
+                  className={place === "bottom" ? "active" : ""}
+                  onClick={this.changePlace.bind(this, "bottom")}
+                >
+                  &#8595; Bottom
                 </a>
                 <a
                   className={place === "right" ? "active" : ""}
                   onClick={this.changePlace.bind(this, "right")}
                 >
-                  Right
-                </a>
-                <a
-                  className={place === "bottom" ? "active" : ""}
-                  onClick={this.changePlace.bind(this, "bottom")}
-                >
-                  Bottom
+                  &#8594; Right
                 </a>
                 <a
                   className={place === "left" ? "active" : ""}
                   onClick={this.changePlace.bind(this, "left")}
                 >
-                  Left
+                  &#8592; Left
                 </a>
               </div>
             </div>
