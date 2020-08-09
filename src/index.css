@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,body {
+  margin: 0px;
+  padding: 0px;
+}
+.tooltip {
+  background: #1182dd;
+  height: 710px; 
+}
+.hover {
+  width: 710px;
+  height: 710px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+.hover a {
+  display: block;
+  width: 200px;
+  height: 100px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  cursor: pointer;
+  box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.direction {
+  position: absolute;
+  bottom: 0px;
+  left: 630px;
+  right: 0px;
+  width: 100%;
+  height: 220px;
+  overflow: auto;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
+.direction .buttons {
+  width: 55%;
+  padding-left: 20px;
+}
+.direction .buttons .item {
+  padding: 3px 2px;
+  clear: both;
+}
+
+.direction .buttons .item a {
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  margin-right: 8px;
+  padding: 7px 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.direction .buttons .item a.active, .direction .buttons .item a:hover {
+  color: black;
+  background: gainsboro;
+}
+
+
